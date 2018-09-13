@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+ng-include {
+  grid-column: 1/-1; }
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15vh 5vh;
+  grid-gap: 3rem; }
+
+.wellness {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  justify-self: center;
+  font-size: 5rem; }
+
+.nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  text-decoration: none;
+  color: black;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 3rem; }
+
+.nav > a {
+  text-decoration: none;
+  color: black; }
