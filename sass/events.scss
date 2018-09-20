@@ -1,0 +1,13 @@
+.events{
+  background-color: $primary-color;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  @include content_grid;
+}
+
+.events > iframe{
+  grid-column: 2/4;
+  align-self: center;
+  justify-self: center;
+
+} 

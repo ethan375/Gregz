@@ -1,0 +1,14 @@
+.services{
+  background-color: $primary-color;
+  @include content_grid;
+  grid-gap: 3rem;
+
+  &__item{
+    grid-column: 2/4;
+    font-size: 3rem;
+  }
+}
+
+hr{
+  grid-column: 2/4;
+}
