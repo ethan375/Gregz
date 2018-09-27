@@ -10,31 +10,79 @@ html {
   font-size: 62.5%; }
 
 body {
-  padding: 3rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background-color: #aaa;
+  color: white; }
 
 .grid {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 1fr [content-start] repeat(8, minmax(min-content, 14rem)) [content-end] 1fr;
+  grid-template-rows: 80vh; }
 
 main {
   grid-column: 1/-1;
   grid-row: 2/-1; }
 
-.about {
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 5rem;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.5rem; }
-  .about__item--1 {
-    grid-column: 3/5; }
-  .about__item--2 {
-    grid-column: 5/7; }
-  .about__item--3 {
-    grid-column: 3/5;
-    grid-row: 2/3; }
-  .about__item--4 {
-    grid-column: 5/7;
-    grid-row: 2/3; }
+  grid-template-columns: 1fr repeat(6, minmax(max-content, 1fr)) 1fr;
+  grid-template-rows: 4rem; }
+  .nav__item {
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center; }
+    .nav__item--1 {
+      grid-column: 2/3; }
+    .nav__item--2 {
+      grid-column: 3/4; }
+    .nav__item--3 {
+      grid-column: 4/5; }
+    .nav__item--4 {
+      grid-column: 5/6; }
+    .nav__item--5 {
+      grid-column: 6/7; }
+    .nav__item--6 {
+      grid-column: 7/8;
+      border: 1px solid white;
+      border-radius: 2rem;
+      padding: 0 1rem 0 1rem; }
+
+.header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-repeat: round;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bowls.jpeg");
+  text-align: center; }
+  .header__image {
+    grid-column: 1/-1;
+    grid-row: 1/2; }
+  .header__header {
+    font-size: 6rem;
+    font-weight: 200; }
+  .header__info {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 3rem; }
+  .header__line {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto 3rem auto; }
+  .header__button:link, .header__button:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 0 6rem 0 6rem;
+    border: 1px solid silver;
+    border-radius: 2rem;
+    transition: all 1s;
+    margin-top: 3rem; }
+  .header__button:hover, .header__button:active {
+    background-color: #6ca4f7; }

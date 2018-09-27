@@ -9,8 +9,7 @@ $color-grey-light-2: #aaa;
 
 
 // FONT VARIABLES
-$font-primary: 'Lato', sans-serif;
-$font-display: 'Ubuntu', sans-serif;
+$primary-font: 'Raleway', sans-serif;
 
 //global mixins
 @mixin content-grid {
@@ -34,15 +33,17 @@ html {
 }
 
 body{
-  padding: 3rem;
-  font-family: $font-primary;
+  font-family: $primary-font;
   font-weight: 300;
   line-height: 1.6;
+  background-color: $color-grey-light-2;
+  color: white;
 }
 
 .grid{
   display: grid;
-  
+  grid-template-columns: 1fr [content-start] repeat(8, minmax(min-content, 14rem))[content-end] 1fr;
+  grid-template-rows: 80vh;
 
 }
 

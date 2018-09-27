@@ -1,0 +1,50 @@
+.header{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-repeat: round;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0, .5)), url('../img/bowls.jpeg');
+  text-align: center;
+ 
+  &__image{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+ 
+
+  &__header{
+    font-size: 6rem;
+    font-weight: 200;
+    // color:  #6ca4f7;
+  }
+
+  &__info{
+    font-size: 3rem; 
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+
+  &__line{
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto 3rem auto;
+  }
+  
+  &__button:link,
+  &__button:visited{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 0 6rem 0 6rem;
+    border: 1px solid silver;
+    border-radius: 2rem; 
+    transition: all 1s;
+    margin-top: 3rem; 
+  }
+
+  &__button:hover,
+  &__button:active{
+    background-color: #6ca4f7;
+  }
+}
+
+
