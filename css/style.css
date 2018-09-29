@@ -19,7 +19,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr [content-start] repeat(8, minmax(min-content, 14rem)) [content-end] 1fr;
-  grid-template-rows: 80vh; }
+  grid-template-rows: repeat(4, 20vh); }
 
 main {
   grid-column: 1/-1;
@@ -49,33 +49,49 @@ main {
       grid-column: 5/6; }
     .nav__item--5 {
       grid-column: 6/7; }
-    .nav__item--6 {
+    .nav__item--6:link, .nav__item--6:visited {
       grid-column: 7/8;
       border: 1px solid white;
       border-radius: 2rem;
-      padding: 0 1rem 0 1rem; }
+      padding: 0 1rem 0 1rem;
+      background-color: rgba(108, 164, 247, 0.5);
+      transition: all 1s; }
+    .nav__item--6:hover, .nav__item--6:active {
+      background-color: #6ca4f7; }
 
 .header {
   grid-column: 1/-1;
-  grid-row: 1/2;
+  grid-row: 1/5;
   background-repeat: round;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bowls.jpeg");
-  text-align: center; }
-  .header__image {
-    grid-column: 1/-1;
-    grid-row: 1/2; }
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
   .header__header {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    justify-self: center;
     font-size: 6rem;
     font-weight: 200; }
   .header__info {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: start;
     font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 3rem; }
+    font-weight: 300; }
   .header__line {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: center;
+    justify-self: center;
     border-radius: 50%;
-    width: 50%;
-    margin: 0 auto 3rem auto; }
+    width: 100%; }
   .header__button:link, .header__button:visited {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    justify-self: center;
     font-size: 2rem;
     text-decoration: none;
     color: white;
@@ -83,6 +99,7 @@ main {
     border: 1px solid silver;
     border-radius: 2rem;
     transition: all 1s;
-    margin-top: 3rem; }
+    align-self: start;
+    background-color: rgba(108, 164, 247, 0.5); }
   .header__button:hover, .header__button:active {
     background-color: #6ca4f7; }

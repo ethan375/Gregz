@@ -1,36 +1,44 @@
 .header{
   grid-column: 1/-1;
-  grid-row: 1/2;
+  grid-row: 1/5;
   background-repeat: round;
   background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0, .5)), url('../img/bowls.jpeg');
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
  
-  &__image{
-    grid-column: 1/-1;
-    grid-row: 1/2;
-  }
- 
-
   &__header{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    justify-self: center;
     font-size: 6rem;
     font-weight: 200;
-    // color:  #6ca4f7;
   }
 
   &__info{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: start;
     font-size: 3rem; 
     font-weight: 300;
-    margin-bottom: 3rem;
   }
 
   &__line{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: center;
+    justify-self: center;
     border-radius: 50%;
-    width: 50%;
-    margin: 0 auto 3rem auto;
+    width: 100%;
   }
   
   &__button:link,
   &__button:visited{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    justify-self:center;
     font-size: 2rem;
     text-decoration: none;
     color: white;
@@ -38,7 +46,8 @@
     border: 1px solid silver;
     border-radius: 2rem; 
     transition: all 1s;
-    margin-top: 3rem; 
+    align-self:start;
+    background-color: rgba(#6ca4f7, .5);
   }
 
   &__button:hover,

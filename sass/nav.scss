@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: 1fr repeat(6, minmax(max-content, 1fr)) 1fr;
   grid-template-rows: 4rem;
-  // background-color: blue;
 
   &__item{
     text-decoration: none;
@@ -39,12 +38,19 @@
 
     }
 
-    &--6{
+    &--6:link,
+    &--6:visited{
       grid-column: 7/8;
       border: 1px solid white;
       border-radius: 2rem;
       padding: 0 1rem 0 1rem ;
+      background-color: rgba(#6ca4f7, .5);
+      transition: all 1s;
+    }
 
+    &--6:hover,
+    &--6:active{
+      background-color: #6ca4f7
     }
   }
 }
