@@ -142,7 +142,8 @@ body {
     justify-self: center;
     font-size: 3rem;
     font-weight: 400;
-    margin: 3rem; }
+    margin-top: 10rem;
+    margin-bottom: 3rem; }
   .about__associate {
     grid-column: 1/3;
     justify-self: center;
@@ -153,7 +154,8 @@ body {
     justify-self: center;
     font-size: 3rem;
     font-weight: 400;
-    margin: 3rem;
+    margin-top: 9.25rem;
+    margin-bottom: 3rem;
     grid-row: 4/5; }
   .about__reiki {
     grid-column: 3/5;
@@ -162,3 +164,117 @@ body {
     font-size: 2rem;
     width: 45rem;
     grid-row: 5/6; }
+
+.calendar {
+  grid-column: 2/10;
+  justify-self: center; }
+
+.services {
+  grid-column: 2/10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  .services__item {
+    grid-column: 2/3;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3.5rem; }
+  .services__reiki {
+    grid-column: 1/3;
+    justify-content: center; }
+    .services__reiki__img {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      justify-self: center; }
+    .services__reiki__header {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      font-size: 3rem;
+      justify-self: center; }
+    .services__reiki__text {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      font-size: 3rem;
+      justify-self: center; }
+  .services__ar {
+    grid-column: 3/5;
+    justify-content: center; }
+    .services__ar__img {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      justify-self: center; }
+    .services__ar__header {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      font-size: 3rem;
+      justify-self: center; }
+    .services__ar__text {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      font-size: 3rem;
+      justify-self: center; }
+      .services__ar__text--2 {
+        grid-column: 1/-1;
+        justify-self: center;
+        font-size: 3rem; }
+  .services__sbvt {
+    grid-column: 1/3;
+    justify-content: center; }
+    .services__sbvt__img {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      justify-self: center; }
+    .services__sbvt__header {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      font-size: 3rem;
+      justify-self: center; }
+    .services__sbvt__text {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      font-size: 3rem;
+      justify-self: center; }
+  .services__qigong {
+    grid-column: 3/5;
+    justify-content: center; }
+    .services__qigong__img {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      justify-self: center; }
+    .services__qigong__header {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      font-size: 3rem;
+      justify-self: center; }
+    .services__qigong__text {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      font-size: 3rem;
+      justify-self: center; }
+  .services__cct {
+    grid-column: 1/-1;
+    justify-content: center; }
+    .services__cct__img {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      justify-self: center; }
+    .services__cct__header {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      font-size: 3rem;
+      justify-self: center; }
+    .services__cct__text {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      font-size: 3rem;
+      justify-self: center; }
+  .services__img {
+    width: 5rem;
+    height: 5rem; }
+
+.contact {
+  grid-column: 2/10;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .contact__item {
+    grid-column: 2/3; }
