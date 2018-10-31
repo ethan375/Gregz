@@ -1,4 +1,12 @@
 .calendar{
 	grid-column: 2/10;
 	justify-self: center;
+	margin-top: 10rem;
+
+	&__header{
+		text-align: center;
+		margin-bottom: 10rem;
+		font-size: 5rem;
+		font-weight: 300;
+	}
 }

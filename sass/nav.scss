@@ -5,14 +5,20 @@
   display: grid;
   grid-template-columns: 1fr repeat(6, minmax(max-content, 1fr)) 1fr;
   grid-template-rows: 4rem;
+  background-color: rgba(223, 230, 233,.3);
 
   &__item{
     text-decoration: none;
     color: white;
     z-index: 1; 
-    font-size: 1.5rem;
+    font-size: 2rem;
     justify-self: center;
     align-self: center;
+    transition: all 1s;
+
+    &__item:hover{
+      color: #95A5A6;
+    }
 
 
     &--1{

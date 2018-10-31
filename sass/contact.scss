@@ -1,10 +1,35 @@
 .contact{
 	grid-column: 2/10;
+	margin-top: 20rem;
 
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	&__form{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		border: 1px solid rgba(0,0,0,.5);
+		background-color: rgba(223, 230, 233,.3);
+	}
 
 	&__item{
-		grid-column: 2/3;
+		grid-column: 1/-1;
+		display: block;
+		margin-left: 5rem;
+		justify-self: start;
+		font-size: 2.5rem;
 	}
+
+	&__header{
+		grid-column: 1/-1;
+		font-size: 4rem;
+		margin: 5rem;
+		justify-self: center;
+		font-weight: 200;
+	}
+
+	&__input{
+		width: 60%;
+		margin-bottom: 3rem;
+		margin-top: 1rem;
+	}
+
+
 }
